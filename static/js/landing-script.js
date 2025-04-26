@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function () {
   AOS.init({
     once: false, // whether animation should happen only once - while scrolling down
     mirror: false, // whether elements should animate out while scrolling past them
-    disable: "mobile", // accepts: 'phone', 'tablet', 'mobile', boolean, expression or function
+    // disable: "mobile", // accepts: 'phone', 'tablet', 'mobile', boolean, expression or function
   });
 
   // Make the chart bars interactive

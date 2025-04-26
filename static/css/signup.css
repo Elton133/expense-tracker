@@ -108,3 +108,10 @@ body {
   font-size: 14px;
   position: relative;
 }
+
+.benefit-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+  gap: 2px;
+}

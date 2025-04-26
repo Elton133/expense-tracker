@@ -75,7 +75,7 @@ main {
 }
 
 h1 {
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-weight: 700;
   line-height: 1.1;
   margin-bottom: 10px;
@@ -84,8 +84,9 @@ h1 {
 
 .subtitle {
   color: #666;
-  font-size: 1.2rem;
-  margin-bottom: 20px;
+  font-size: 1rem;
+  margin-top: 10px;
+  margin-bottom: 30px;
   max-width: 400px;
 }
 
@@ -244,8 +245,8 @@ h1 {
 .chart-bars {
   display: flex;
   justify-content: space-between;
-  align-items: flex-end;
-  height: 128px;
+
+  height: 200px;
 }
 
 .month {
@@ -382,4 +383,73 @@ h1 {
 
 #tooltip {
   transition: all 0.3s ease;
+}
+
+@media (max-width: 1024px) {
+  .container {
+    height: auto;
+    padding: 20px;
+  }
+
+  main {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .content-left,
+  .content-right {
+    min-width: 100%;
+    padding-right: 0;
+  }
+
+  .dashboard {
+    padding: 20px;
+  }
+
+  .chart-container {
+    height: 250px;
+  }
+
+  .chart-bars {
+    height: 150px;
+  }
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 1.2rem;
+  }
+
+  .subtitle {
+    font-size: 1rem;
+  }
+
+  .cta-buttons {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .period-selector {
+    font-size: 12px;
+    padding: 6px 12px;
+  }
+
+  .pill {
+    font-size: 12px;
+    padding: 6px 12px;
+  }
+
+  .tooltip {
+    width: 160px;
+    padding: 10px;
+  }
+
+  .tooltip-amount {
+    font-size: 16px;
+  }
 }
