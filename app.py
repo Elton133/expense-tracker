@@ -60,7 +60,7 @@ def register():
             cursor.execute('INSERT INTO register VALUES (NULL, % s, % s, % s)', (username, email,password))
             mysql.connection.commit()
             msg = 'You have successfully registered !'
-            return render_template('signup.html', msg = msg)
+            return redirect('/signin')  
         
         
  
